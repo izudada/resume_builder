@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import (PermissionsMixin, AbstractBaseUser, UserManager)
+from django.utils.translation import gettext_lazy as _
 
 
 class AccountManager(UserManager):
@@ -40,3 +41,19 @@ class AccountManager(UserManager):
             raise ValueError('Superuser must have is_superuser=True.')
 
         return self._create_user(username, email, password, **extra_fields)
+
+
+class TrackingModel(models.Model):
+    """
+        Most of the models have have these two fields below as recurrent fields, 
+        so to maintain a dry code it is wise to separate them this way.
+    """
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+
+    class Meta:
+        abstract = True
+        ordering = ('-created_at')
+
+
