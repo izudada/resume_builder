@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login </title>
-</head>
-<body>
-    <form method="post">
-        
-    </form>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %} Login {% endblock %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+    <div class="container">
+        <!-- <h3 class="intro"> Login </h3> -->
+        <form action="" class="form-group" method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <p> <small>Don't Have an account? <a href="">Sign Up</a></small> </p>
+            <input class="home__button" type="submit" class="btn btn-success" value="Login">
+        </form>
+    </div>
+
+{% endblock %}
