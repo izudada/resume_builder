@@ -2,6 +2,10 @@ body{
     background: url(../images/login_bg.png);
 }
 
+.login{
+    color: #fff;
+}
+
 .login_static{
     width: 20%;
 }
