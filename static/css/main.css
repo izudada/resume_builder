@@ -1,3 +1,7 @@
 body{
     background: url(../images/login_bg.png);
 }
+
+.login_static{
+    width: 20%;
+}
