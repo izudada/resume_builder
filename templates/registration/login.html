@@ -7,7 +7,7 @@
 {% block body %}
 
     <div class="container">
-        <img src="../../static/images/login_static.png" alt="">
+        <img src="../../static/images/login_static.png" class="login_static" alt="">
         <form action="" class="form-group" method="post">
             {% csrf_token %}
             {{ form|crispy }}
