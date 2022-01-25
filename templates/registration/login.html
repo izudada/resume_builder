@@ -7,13 +7,15 @@
 {% block body %}
 
     <div class="container login">
-        <img src="../../static/images/login_static.png" class="login_static" alt="">
-        <form action="" class="form-group" method="post">
-            {% csrf_token %}
-            {{ form|crispy }}
-            <p> <small>Don't Have an account? <a href="{% url 'register' %}">Sign Up</a></small> </p>
-            <input class="home__button" type="submit" class="btn btn-success" value="Login">
-        </form>
+        <div class="login-child">
+            <img src="../../static/images/login_static.png" class="login_static" alt="">
+            <form action="" class="form-group" method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <p> <small>Don't Have an account? <a href="{% url 'register' %}">Sign Up</a></small> </p>
+                <input class="home__button" type="submit" class="btn btn-success" value="Login">
+            </form>
+        </div>
     </div>
 
 {% endblock %}
