@@ -2,10 +2,12 @@
 
 {% block title %} Login {% endblock %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 {% block body %}
 
     <div class="container">
+        <img src="../../static/images/login_static.png" alt="">
         <form action="" class="form-group" method="post">
             {% csrf_token %}
             {{ form|crispy }}
