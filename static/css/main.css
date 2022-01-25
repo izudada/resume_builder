@@ -5,6 +5,7 @@ body{
 
 .login{
     color: #fff;
+    background: rgba(0,0,0,.5);
 }
 
 .login_static{
