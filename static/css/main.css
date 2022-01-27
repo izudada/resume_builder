@@ -3,14 +3,12 @@ body{
     background-size: cover;
 }
 
-.login{
+.login, .register{
     color: #fff;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 500px;
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.8);
     padding: 0 30px;
@@ -20,6 +18,15 @@ body{
     border-radius: 20px;
     box-shadow: 1px -1px 10px 2px rgb(255, 255, 255);
     font-size: 15pt;
+}
+
+.login{
+    width: 450px;
+    height: 500px;
+}
+
+.register{
+    /*  */
 }
 
 .login_static{
