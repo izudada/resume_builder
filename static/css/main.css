@@ -15,15 +15,15 @@ body{
     background: rgba(0, 0, 0, 0.9);
     padding: 80px 30px 0 30px;
     border-radius: 20px;
-    box-shadow: 1px -1px 10px 2px #fff;
+    box-shadow: 1px -1px 10px 2px rgb(255, 255, 255);
     font-size: 15pt;
 }
 
 .login_static{
-    width: 40%;
+    width: 50%;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: calc(-200px/2);
-    left: calc(50% - 90px);
+    top: calc(-270px/2);
+    left: calc(50% - 120px);
 }
