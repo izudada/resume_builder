@@ -1,6 +1,7 @@
 body{
     background: url(../images/login_bg.png);
     background-size: cover;
+    /* background-repeat: no-repeat; */
 }
 
 .login, .register{
@@ -11,38 +12,83 @@ body{
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.8);
-    padding: 0 30px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
     box-shadow: 1px -1px 10px 2px rgb(255, 255, 255);
-    font-size: 15pt;
 }
 
 .login{
-    width: 450px;
-    height: 500px;
+    width: 420px;
+    height: 460px;
 }
 
-.register{
-    /*  */
+.login label,
+.register label{
+    font-weight: bold;
+}
+
+.register input,
+.login input,
+.register:focus,
+.login:focus{
+    color: #fff;
+}
+
+.login input[type="text"],
+.login input[type="password"],
+.register input[type="text"],
+.register input[type="password"],
+.register input[type="email"]{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.login_static,
+.register__static{
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
 }
 
 .login_static{
     width: 50%;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: calc(-270px/2);
+    top: calc(-220px/2);
     left: calc(50% - 120px);
 }
 
-.auth__buttons{
-    background: #4b8cc9;
+.register__static{
+    width: 33%;
+    top: calc(-200px/2);
+    left: calc(50% - 80px);
+}
+
+.register{
+    margin-top: 100px;
+    padding-top: 40px;
+}
+
+/* .register ul,
+.register small{
+    color: #fff !important;
+} */
+
+.login__button,
+.register__button{
     padding: 5px 15px;
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
     width: 100%;
+}
+
+.login__button{
+    background: #4b8cc9;
+}
+
+.register__button{
+    background: rgb(3, 184, 3);
 }
