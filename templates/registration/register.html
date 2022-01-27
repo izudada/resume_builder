@@ -5,13 +5,14 @@
 
 {% block body %}
 
-        <div class="container">
+        <div class="register">
+            <img src="../../static/images/register__static.png" class="register__static" alt="">
             <form action="" class="form-group" method="post">
                 {% csrf_token %}
                 {{  form|crispy }}
 
                 <p> <small>Already have an account? <a href="{% url 'login' %}">Login</a></small> </p>
-                <input type="submit" class="btn btn-success" value="Register">
+                <input type="submit" class="register__button" value="Register">
             </form>
         </div>
 
