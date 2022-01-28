@@ -14,4 +14,4 @@ class Profile(TrackingModel, models.Model):
     facebook_profile = models.CharField(max_length=120, null=True)
     twitter_profile = models.CharField(max_length=120, null=True)
     linkedin_profile = models.CharField(max_length=120, null=True)
-    portfolio = models.CharField(max_length=120, null=True)
+    portfolio_url = models.CharField(max_length=120, null=True)
