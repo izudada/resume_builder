@@ -1,5 +1,6 @@
 Pipfile
 
 app/.env
+app/__pycache__/
 
 db.sqlite3
