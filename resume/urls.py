@@ -1,6 +1,8 @@
 
 from django.urls import path
 
-urlpatterns = [
+from .views import UserProfile
 
+urlpatterns = [
+    path('resume/profile', UserProfile.as_view(), name="profile"),
 ]
