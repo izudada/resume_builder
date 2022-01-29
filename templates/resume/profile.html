@@ -1,0 +1,13 @@
+{% load static %}
+{% block body %}
+
+    {% if user.is_authenticated %}
+        {{ data }}
+        {% if context %}
+            {{ context }}
+        {% else %}
+            <p> You have no resume record yet </p>
+        {% endif %}
+    {% endif %}
+
+{% endblock %}
