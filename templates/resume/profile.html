@@ -2,8 +2,7 @@
 {% block body %}
 
     {% if user.is_authenticated %}
-        {{ data }}
-        {% if context %}
+        {% if data %}
             {{ context }}
         {% else %}
             <p> You have no resume record yet </p>
